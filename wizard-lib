@@ -1,0 +1,28 @@
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/nixul-no1/back-up/main/wizard"))()
+local Window = Library:NewWindow("Window")
+
+local v = Window:NewSection("Options")
+
+v:CreateButton("Button", function()
+print("HI")
+end)
+
+v:CreateTextbox("TextBox", function(text)
+        print(text)
+end)
+
+v:CreateToggle("Auto Ez", function(value)
+print(value)
+end)
+
+v:CreateDropdown("DropDown", {"Hello", "World", "Hello World"}, 2, function(text)
+print(text)
+end)
+
+v:CreateSlider("Slider", 0, 100, 15, false, function(value)
+print(value)
+end)
+
+v:CreateColorPicker("Picker", Color3.new(255, 255, 255), function(value)
+print(value)
+end)
